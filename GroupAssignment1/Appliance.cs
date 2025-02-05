@@ -24,7 +24,7 @@ namespace GroupAssignment1
         public int Quantity { get; set; }
 
         // Methods 
-        public Appliance(string brand, string color, string itemNumber, double price, int quantity, double wattage)
+        public Appliance(string itemNumber,string brand, int quantity, double wattage, string color, double price )
         {
             this.Brand = brand;
             this.Color = color;
@@ -36,7 +36,7 @@ namespace GroupAssignment1
 
         public abstract void Checkout();
         public abstract void DetermineAppliance();
-        public abstract void FormatForFile();
+        public abstract string FormatForFile();
 
     } // abstract class
 } // namespace
