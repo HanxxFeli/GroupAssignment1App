@@ -38,7 +38,5 @@ namespace GroupAssignment1
         public abstract void DetermineAppliance();
         public abstract void FormatForFile();
 
-        public abstract void TestMethod();
-
     } // abstract class
 } // namespace
