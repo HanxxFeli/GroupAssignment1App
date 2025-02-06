@@ -36,7 +36,7 @@ namespace GroupAssignment1
 
         public abstract void Checkout();
         public abstract void DetermineAppliance();
-        public abstract void FormatForFile();
+        public abstract string FormatForFile();
 
     } // abstract class
 } // namespace
