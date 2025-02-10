@@ -27,11 +27,11 @@ namespace GroupAssignment1
         public Appliance(string itemNumber,string brand, int quantity, double wattage, string color, double price )
         {
             this.Brand = brand;
-            this.Color = color;
             this.ItemNumber = itemNumber;
             this.Price = price;
-            this.Quantity = quantity;
             this.Wattage = wattage;
+            this.Quantity = quantity;
+            this.Color=color;
         }
 
         public abstract void Checkout();
