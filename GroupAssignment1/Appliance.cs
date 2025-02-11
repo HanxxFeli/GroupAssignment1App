@@ -34,7 +34,18 @@ namespace GroupAssignment1
             this.Color=color;
         }
 
-        public abstract void Checkout();
+        public void Checkout()
+        {
+            if (this.Quantity > 0)
+            {
+                this.Quantity--;
+                Console.WriteLine($"Appliance {ItemNumber} has beeen checked out.");
+            }
+            else
+            {
+                Console.WriteLine("The appliance is not available to be checked out");
+            }
+        }
         public abstract void DetermineAppliance();
         public abstract string FormatForFile();
 

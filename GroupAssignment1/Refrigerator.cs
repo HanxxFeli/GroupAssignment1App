@@ -22,18 +22,7 @@ namespace GroupAssignment1
             this.Width = width;
         }
 
-        public override void Checkout()
-        {
-            if (this.Quantity > 0)
-            {
-                this.Quantity--;
-                Console.WriteLine($"Appliance {ItemNumber} has beeen checked out.");
-            }
-            else
-            {
-                Console.WriteLine("The apppliance is not available to be checked out");
-            }
-        }
+        
 
         public override void DetermineAppliance()
         {
